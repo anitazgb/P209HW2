@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prog209 HM2</title>
+    <link rel="stylesheet" text="text/css" href="stylesheet.css" />
+    <script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+    <form name="mainForm" onsubmit="return formSubmitEvent()" method="post">
+
+        <!--Pizza size radio buttons-->
+        <fieldset id="pizzaSize">
+            <legend>Pizza Size</legend>
+            <p><label><input type=radio name="pizzaSize" value="Small" id="small">Small</label></p>
+            <p><label><input type=radio name="pizzaSize" value="Medium" id="medium">Medium</label></p>
+            <p><label><input type=radio name="pizzaSize" value="Large" id="large">Large</label></p>
+        </fieldset>
+        <!--Pizza topping dropdown-->
+        <fieldset>
+            <legend>Pizza Topping</legend>
+            <select name="topping" id="topping" size="1">
+                <option value="no toppings" selected="selected">No toppings</option>
+                <option value="one topping">One topping</option>
+                <option value="2 toppings">2 toppings</option>
+            </select>
+            <input type="submit" value="Submit" id="calc" />
+        </fieldset>
+    </form>
+</body>
+
+</html>
