@@ -6,13 +6,17 @@ function formSubmitEvent() {
 
     let total = 0;
 
+    console.log(size);
     if (size == "small") {
         total = total + 7;
     } else if (size == "medium") {
         total = total + 10;
     } else if (size == "large") {
         total = total + 14;
-    } if (topping == "no topping") {
+    } 
+    
+    console.log(topping);
+    if (topping == "no topping") {
         total = total + 0;
     } if (topping == "one topping") {
         total = total + 2;
